@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Gilroy';
     src: url("../fonts/Gilroy-Semibold.ttf");
@@ -76,7 +80,7 @@ body {
     margin-left: 192px;
 }
 
-.meni-list {
+.menu-list {
     list-style: none;
     display: flex;
 }
@@ -328,6 +332,22 @@ body {
     line-height: 20px;
 }
 
+.pageup {
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: 0.6s;
+}
 
+.pageup-hide {
+    opacity: 0;
+}
+.pageup img {
+    width: 100%;
+}
 
 
